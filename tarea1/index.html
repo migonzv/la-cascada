@@ -1,0 +1,41 @@
+  <!--
+    Métodos CSS
+Este ejercicio final de Fundamentos de CSS va a darte una mirada más cercana a la cascada, en particular la especificidad y el orden de las reglas. Tanto el archivo HTML como el CSS están rellenados para ti, así que en lugar de añadir reglas tú mismo, simplemente editarás lo que se te proporciona.
+
+Hay algunos elementos que tienen algún tipo de problema de especificidad o de orden de las reglas en el archivo CSS proporcionado. Depende de ti averiguar qué problema afecta a un elemento y cómo solucionarlo. Puedes editar el archivo CSS añadiendo, eliminando o editando selectores para un bloque de declaración, o moviendo los bloques de declaración. No debes editar el archivo HTML ni ninguno de los estilos reales del CSS.
+
+Hay múltiples maneras de resolver este ejercicio, por lo que hemos proporcionado algunas de las posibles soluciones para cada elemento.
+
+Los problemas con la cascada pueden ser la pesadilla de su existencia para muchos cuando se trata de CSS. Aunque no te convertirás en un experto en cascada sólo con este ejercicio, y hay otras formas de tratar estos problemas, sigue siendo súper útil ver cómo estos problemas afectan a nuestros estilos finales y por qué es importante ordenar las reglas con cuidado.
+
+Resultado deseado
+
+Autocomprobación
+¿Te has asegurado de no editar el archivo HTML?
+Si has añadido selectores al CSS, ¿se dirigen a un elemento HTML válido?
+  -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Fix the Cascade</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <p class="para">I'm just a paragraph with extra bold text!</p>
+      <p class="para small-para">I'm a smaller paragraph, also with extra bold text!</p>
+  
+      <button id="confirm-button" class="button confirm">Confirm</button>
+      <button id="cancel-button" class="button cancel">Cancel</button>
+  
+      <div class="text">I'm a div with thin text!</div>
+      <div class="text">I'm a div with thin text and a child div!
+        <div class="text child">I'm a smaller child div with extra bold text.</div>
+      </div>
+    </body>
+  </html>
+</body>
+</html>
